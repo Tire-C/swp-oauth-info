@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="it">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Informazioni sull'integrazione personale Google Drive di Samsung Workstation Portable (SWP)."><title>Samsung Workstation Portable · OAuth Google Drive</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<header><div class="wrap"><a class="brand" href="./">SWP <span>·</span> OAuth info</a><nav aria-label="Navigazione"><a href="./">Home</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Termini</a></nav></div></header>
+<main class="wrap">
+<div class="eyebrow">Applicazione personale · Google Drive OAuth</div>
+<h1>Samsung Workstation Portable</h1>
+<p class="lead">SWP è un ambiente di lavoro e sviluppo software portatile su un'unità Samsung rimovibile. Questa pagina descrive esclusivamente la sua integrazione con Google Drive mediante <strong>OAuth 2.0</strong>, utilizzata dal proprietario per documenti del progetto e copie di sicurezza.</p>
+<div class="panel">
+<h2>Come utilizza Google Drive</h2>
+<ul>
+<li>Consente al proprietario di autorizzare e revocare l'accesso al proprio account Google.</li>
+<li>Legge e trasferisce documenti del progetto nella cartella dedicata a SWP su Google Drive.</li>
+<li>Carica copie cifrate dei checkpoint per consentire la verifica e il recupero dei dati.</li>
+<li>Non è un servizio pubblico e non offre account ad altri utenti.</li>
+</ul>
+<p class="notice"><strong>Permessi:</strong> il client richiede lo scope Google Drive <code>drive</code>, che a livello OAuth permette l'accesso ampio ai file di Drive. SWP limita le proprie operazioni alla cartella del progetto mediante controlli applicativi: questa limitazione non riduce la portata tecnica del permesso OAuth.</p>
+</div>
+<h2>Protezione e controllo dei dati</h2>
+<p>Le credenziali OAuth sono conservate nella configurazione rclone sul volume portatile protetto da BitLocker. I checkpoint caricati come backup sono cifrati prima del trasferimento. Altri documenti sincronizzati nella cartella SWP possono invece essere archiviati in chiaro. Il proprietario può revocare l'accesso in ogni momento dalle <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">impostazioni del proprio Account Google</a>.</p>
+<h2>Informazioni e trasparenza</h2>
+<p>Questo sito è unicamente informativo: non offre un modulo di accesso, non esegue script, non utilizza cookie analitici e non raccoglie dati di Google Drive. Il suo hosting è fornito da GitHub Pages, soggetto alle condizioni e alle informazioni sulla privacy di GitHub.</p>
+<p><a class="button" href="./privacy.html">Leggi l'informativa sulla privacy</a></p>
+<div class="panel"><h2>English summary</h2><p>Samsung Workstation Portable (SWP) is a personal portable developer environment. Its desktop OAuth client connects the owner’s Google Drive to SWP for project documents and encrypted checkpoint backups. It requests the broad <code>drive</code> OAuth scope; application-level safeguards constrain routine operations to the dedicated SWP folder. OAuth tokens are stored on the BitLocker-protected USB volume. This website contains no login, tracking or access to Google data. See the <a href="./privacy.html">privacy policy</a> and <a href="./terms.html">terms of use</a>.</p></div>
+</main>
+<footer><div class="wrap"><span>SWP · Informazioni pubbliche sull'integrazione OAuth personale</span><span><a href="./privacy.html">Privacy</a> · <a href="./terms.html">Termini</a> · <a href="https://github.com/Tire-C/swp-oauth-info">Repository</a></span></div></footer>
+</body></html>
